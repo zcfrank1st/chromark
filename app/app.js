@@ -9,4 +9,17 @@ angular
   .config(function($sceProvider) {
     enableTab('tab')
     $sceProvider.enabled(false);
+  })
+  .controller('appController', function ($scope) {
+    $scope.open = function () {
+
+    };
+
+    $scope.save = function () {
+
+    };
+
+    $scope.new = function () {
+
+    };
   });

@@ -1,10 +1,43 @@
+.btn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  color: #ffffff;
+  font-size: 10px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  display: inline;
+  float: right;
+  margin-left: 5px;
+}
+.green {
+  background: green;
+}
+
+.blue {
+  background: #3476d9;;
+}
+
+.red {
+  background: orange;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
 .container-up {
   width: 100%;
-  height: 270px;
+  height: 250px;
 }
 .container-down {
   width: 100%;
-  height: 300px;
+  height: 250px;
 }
 
 hr.style-eight {

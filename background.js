@@ -4,7 +4,7 @@ chrome.app.runtime.onLaunched.addListener(
       id: 'main',
       bounds: {
         width: 800,
-        height: 600
+        height: 650
       },
       resizable: false
     });

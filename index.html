@@ -6,10 +6,16 @@
   <title></title>
   <link rel="stylesheet" href="app/style.css">
 </head>
-<body ng-app="app">
-  <textarea ng-model="markdown" id="tab" class="container-up" style= "background:transparent;border-style:none;outline:none;font-size:16px;font-weight:light;"></textarea>
-  <hr class="style-eight">
-  <div ng-bind-html="markdown|m2c" class="container-down" contenteditable='false'></div>
+<body ng-app="app" contenteditable='false'>
+  <div ng-controller="appController">
+    <div class="btn blue" ng-click="save()">save ...</div>
+    <div class="btn green" ng-click="open()">open ...</div>
+    <div class="btn red" ng-click="new()">new  ...</div>
+
+    <textarea ng-model="markdown" id="tab" class="container-up" style= "background:transparent;border-style:none;outline:none;font-size:16px;font-weight:normal;"></textarea>
+    <hr class="style-eight">
+    <div ng-bind-html="markdown|m2c" class="container-down" contenteditable='false'></div>
+  </div>
 
   <script src="app/libs/tab.js"></script>
   <script src="app/libs/marked.js"></script>

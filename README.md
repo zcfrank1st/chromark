@@ -17,4 +17,3 @@ MIT
 	TODO:<br>
 	1.add file operations <br>
     2.change markdown css
-    3.add icons

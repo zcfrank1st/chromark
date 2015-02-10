@@ -5,6 +5,18 @@
     }
   },
   "manifest_version" : 2,
-  "name": "chromark",
-  "version": "0.0.1"
+  "name": "Chromark",
+  "version": "0.0.1",
+  "permissions": [
+    {
+      "fileSystem": [
+        "directory",
+        "write"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "assets/icon-16.png",
+    "128": "assets/icon-128.png"
+  }
 }

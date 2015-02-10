@@ -15,5 +15,5 @@ MIT
 
 <br>
 	TODO:<br>
-	1.fix file operation `cancel` and read file content to ng-model
-    2.change markdown css
+	1.fix read file content to ng-model <br>
+  2.change markdown css

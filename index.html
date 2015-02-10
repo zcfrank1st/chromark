@@ -7,19 +7,18 @@
   <link rel="stylesheet" href="app/style.css">
 </head>
 <body ng-app="app" contenteditable='false'>
-  <div ng-controller="appController">
-    <div class="btn blue" ng-click="save()">save ...</div>
+  <div ng-controller="appController" id="dl">
+    <div class="btn orange" ng-click="save()">save ...</div>
     <div class="btn green" ng-click="open()">open ...</div>
-    <div class="btn red" ng-click="new()">new  ...</div>
 
-    <textarea ng-model="markdown" id="tab" class="container-up" style= "background:transparent;border-style:none;outline:none;font-size:16px;font-weight:normal;"></textarea>
+    <textarea ng-model="markdown" id="tab" class="container-up" style="background:transparent;border-style:none;outline:none;font-size:20px;font-weight:bold;color:#3366FF"></textarea>
     <hr class="style-eight">
     <div ng-bind-html="markdown|m2c" class="container-down" contenteditable='false'></div>
   </div>
 
   <script src="app/libs/tab.js"></script>
   <script src="app/libs/marked.js"></script>
-  <script src="app/libs/angular.min.js"></script>
+  <script src="app/libs/angular.js"></script>
   <script src="app/app.js"></script>
 </body>
 </html>

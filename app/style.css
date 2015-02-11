@@ -53,3 +53,29 @@ hr.style-eight:after {
     padding: 0 0.25em;
     background: white;
 }
+
+h1,h2,h3,h4,h5,h6 {
+    color: saddlebrown;
+}
+
+hr {
+    border-color: lightgreen;
+}
+
+p {
+    font-size: 16px;
+}
+
+ol,ul {
+  font-size: 16px;
+}
+
+code {
+    color: red;
+    background-color: antiquewhite;
+    font-size: 14px;
+}
+
+em, strong {
+  color: goldenrod;
+}

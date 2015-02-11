@@ -13,7 +13,6 @@ angular
   })
   .controller('appController', function ($scope) {
     $scope.open = function () {
-      $scope.markdown = "hello world";
       chrome.fileSystem.chooseEntry({type: 'openFile'},
         function (fe) {
           if(chrome.runtime.lastError) {

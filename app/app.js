@@ -12,6 +12,7 @@ angular
   })
   .controller('appController', function ($scope) {
     $scope.open = function () {
+      $scope.markdown = "hello world";
       chrome.fileSystem.chooseEntry({type: 'openFile'},
         function (fe) {
           if(chrome.runtime.lastError) {
@@ -21,7 +22,8 @@ angular
               fe.file(function (file) {
                 var reader = new FileReader();
                 reader.onload = function () {
-                  $scope.markdown = this.result; // ?? TODO 为什么有问题
+                  $scope.markdown = this.result;
+                  $scope.$apply(); // 游离在$scope之外的操作
                 };
                 reader.readAsText(file);
               });

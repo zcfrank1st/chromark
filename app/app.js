@@ -4,6 +4,7 @@ angular
     return function(c) {
       var content = c || '';
       return marked(content);
+      // return toHTML(content);
     };
   })
   .config(function($sceProvider) {

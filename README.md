@@ -1,5 +1,5 @@
 # chromark
-===
+---
 
 ### 1 -> discription
 
@@ -15,4 +15,5 @@ MIT
 
 <br>
 	TODO:<br>
-  1.change markdown css
+  1.markdown 解析优化
+  2.markdown 样式修改
